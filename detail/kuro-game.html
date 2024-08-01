@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kuro Game</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <style>
+    .warna-text {
+      /* color: rgb(2, 143, 143); */
+      /* color: rgb(0, 4, 255); */
+      -webkit-text-stroke-width: 0.2px;
+      -webkit-text-stroke-color: black;
+    }
+
+    .hijau {
+      color: rgb(0, 94, 0);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#sampul">
+        <img src="../img/kuro-game/logo.png" width="30" height="30" class="d-inline-block align-text-top">
+        Kuro Game</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#section-pertama">Story</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-kedua">World</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-ketiga">Character</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-keempat">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section-kelima">Item</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../home.html">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <!-- sampul start -->
+  <div class="card bg-white text-white" id="sampul">
+    <img src="../img/kuro-game/sampul13.png" class="card-img" alt="...">
+    <div class="card-body text-end">
+      <h2 class="card-title text-success">Kuro Game</h2>
+      <h5 class="card-text text-success">Game Edukasi Bahasa Inggris yang dirancang khusus untuk anak SMA kelas XII</h5>
+      <img src="../img/kuro-game/unpas.PNG" width="80" alt="">
+      <img src="../img/kuro-game/sma.PNG" width="55" alt="">
+      <p class="card-text text-success">Universitas Pasundan X SMAN 1 Lemahabang Karawang</p>
+    </div>
+  </div>
+  <!-- end sampul -->
+
+  <div class="card border-dark mb-3" id="section-pertama">
+    <div class="card-header text-center">
+      <h5>Story</h5>
+    </div>
+  </div>
+
+  <!-- story start -->
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="../img/kuro-game/story1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4 class="warna-text text-success">Leo seorang Siswa</h4>
+          <p class="warna-text text-success">Perjalanan seorang siswa bernama Leo yang sangat senang memecahkan mencari
+            dan
+            memecahkan masalah seperti
+            layaknya seorang detektif, hari ini Leo akan melakukan perjalanan untuk menyelesaikan les Bahasa
+            Inggris-nya.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="../img/kuro-game/story2.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h4 class="warna-text text-success">Detektif Leo</h4>
+          <p class="warna-text text-success">Guru les melakukan tantangan pada Leo untuk mencari barang di dalam ruangan
+            dan
+            memecahkan soal-soal bahasa Inggris satu demi satu seperti seorang detektif, ayo bantu Leo untuk menjadi
+            seorang detektif.</p>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- end story -->
+
+  <div class="card border-dark mb-3" id="section-kedua">
+    <div class="card-header text-center">
+      <h5>World</h5>
+    </div>
+  </div>
+
+  <!-- world start -->
+  <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active hijau" id="world-tab" data-bs-toggle="tab" data-bs-target="#world" type="button"
+        role="tab" aria-controls="home" aria-selected="true">Open World</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link hijau" id="gedung-tab" data-bs-toggle="tab" data-bs-target="#gedung" type="button"
+        role="tab" aria-controls="gedung" aria-selected="false">Gedung Les</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link hijau" id="lantai1-tab" data-bs-toggle="tab" data-bs-target="#lantai1" type="button"
+        role="tab" aria-controls="lantai1" aria-selected="false">Gedung Les Lantai 1</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link hijau" id="lantai2-tab" data-bs-toggle="tab" data-bs-target="#lantai2" type="button"
+        role="tab" aria-controls="lantai2" aria-selected="false">Gedung Les Lantai 2</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link hijau" id="dalamruang-tab" data-bs-toggle="tab" data-bs-target="#dalamruang" type="button"
+        role="tab" aria-controls="dalamruang" aria-selected="false">Ruang Kelas</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="world" role="tabpanel" aria-labelledby="world-tab">
+      <img src="../img/kuro-game/world1.png" class="d-block w-100" alt="">
+    </div>
+    <div class="tab-pane fade" id="gedung" role="tabpanel" aria-labelledby="gedung-tab">
+      <img src="../img/kuro-game/world2.png" class="d-block w-100" alt="">
+    </div>
+    <div class="tab-pane fade" id="lantai1" role="tabpanel" aria-labelledby="lantai1-tab">
+      <img src="../img/kuro-game/world3.png" class="d-block w-100" alt="">
+    </div>
+    <div class="tab-pane fade" id="lantai2" role="tabpanel" aria-labelledby="lantai2-tab">
+      <img src="../img/kuro-game/world4.png" class="d-block w-100" alt="">
+    </div>
+    <div class="tab-pane fade" id="dalamruang" role="tabpanel" aria-labelledby="dalamruang-tab">
+      <img src="../img/kuro-game/world5.png" class="d-block w-100" alt="">
+    </div>
+  </div>
+  <!-- end world -->
+
+  <div class="card border-dark mb-3" id="section-ketiga">
+    <div class="card-header text-center">
+      <h5>Character</h5>
+    </div>
+  </div>
+
+  <!-- karakter start -->
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="../img/kuro-game/Siswa.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Leo</h5>
+          <p class="card-text">Pemain menjadi seorang siswa Les Bahasa Inggris yang bernama Leo. Desain karakter dibuat
+            untuk merepresentasikan siswa SMA yang akan mengikuti Les.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../img/kuro-game/Guru.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Guru Les</h5>
+          <p class="card-text">Guru Les Bahasa Inggris sebagai pendukung dari karakter Pemain. Desain karakter dibuat
+            seperti seorang Guru di dunia nyata.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../img/kuro-game/Satpam.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Satpam</h5>
+          <p class="card-text">Satpam sebagai pendukung dari alur game.
+            Desain karakter dibuat menyerupai seorang Satpam di dunia nyata dengan ciri khas warna pakaiannya.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../img/kuro-game/Npc1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">NPC Masyarakat</h5>
+          <p class="card-text">NPC Masyarakat sebagai pendukung dari suasana game. NPC Masyarakat berfungsi untuk
+            menghidupkan suasana perkotaan di lingkungan game.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <br>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/kuro-game/Npc2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">NPC Masyarakat</h5>
+          <p class="card-text">NPC Masyarakat sebagai pendukung dari suasana game. NPC Masyarakat berfungsi untuk
+            menghidupkan suasana perkotaan di lingkungan game.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/kuro-game/Npc3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">NPC Masyarakat</h5>
+          <p class="card-text">NPC Masyarakat sebagai pendukung dari suasana game. NPC Masyarakat berfungsi untuk
+            menghidupkan suasana perkotaan di lingkungan game.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../img/kuro-game/Npc4.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">NPC Masyarakat</h5>
+          <p class="card-text">NPC Masyarakat sebagai pendukung dari suasana game. NPC Masyarakat berfungsi untuk
+            menghidupkan suasana perkotaan di lingkungan game.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- end karakter -->
+
+  <div class="card border-dark mb-3" id="section-keempat">
+    <div class="card-header text-center">
+      <h5>Features</h5>
+    </div>
+  </div>
+
+  <!-- features start -->
+  <nav>
+    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+      <button class="nav-link active hijau" id="nav-jelajah-tab" data-bs-toggle="tab" data-bs-target="#nav-jelajah"
+        type="button" role="tab" aria-controls="nav-jelajah" aria-selected="true">Menjelajah Kota</button>
+      <button class="nav-link hijau" id="nav-satpam-tab" data-bs-toggle="tab" data-bs-target="#nav-satpam" type="button"
+        role="tab" aria-controls="nav-satpam" aria-selected="false">Interaksi Satpam</button>
+      <button class="nav-link hijau" id="nav-guru-tab" data-bs-toggle="tab" data-bs-target="#nav-guru" type="button"
+        role="tab" aria-controls="nav-guru" aria-selected="false">Interaksi Guru</button>
+      <button class="nav-link hijau" id="nav-cari-tab" data-bs-toggle="tab" data-bs-target="#nav-cari" type="button"
+        role="tab" aria-controls="nav-cari" aria-selected="false">Mencari Barang</button>
+      <button class="nav-link hijau" id="nav-belajar-tab" data-bs-toggle="tab" data-bs-target="#nav-belajar"
+        type="button" role="tab" aria-controls="nav-belajar" aria-selected="false">Belajar</button>
+      <button class="nav-link hijau" id="nav-soal-tab" data-bs-toggle="tab" data-bs-target="#nav-soal" type="button"
+        role="tab" aria-controls="nav-soal" aria-selected="false">Memecahkan Soal</button>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-jelajah" role="tabpanel" aria-labelledby="nav-jelajah-tab">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-7">
+            <img src="../img/kuro-game/Denah.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-5">
+            <div class="card-body">
+              <br>
+              <h5 class="card-title">Menjelajah Kota</h5>
+              <p class="card-text">Pemain sebagai Karakter Leo dapat menjelajah kota baik untuk menuju Gedung Les
+                ataupun hanya untuk sekedar jalan-jalan.</p>
+              <br>
+              <p class="card-text"><small class="text-muted">Kuro Game</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-satpam" role="tabpanel" aria-labelledby="nav-satpam-tab">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-7">
+            <img src="../img/kuro-game/interaksi_satpam.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-5">
+            <div class="card-body">
+              <br>
+              <h5 class="card-title">Interaksi dengan Satpam</h5>
+              <p class="card-text">Leo dapat berinteraksi dengan satpam seperti menyapa Leo dan mempersilahkannya untuk
+                masuk ke dalam Gedung Les.</p>
+              <br>
+              <p class="card-text"><small class="text-muted">Kuro Game</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-guru" role="tabpanel" aria-labelledby="nav-guru-tab">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-7">
+            <img src="../img/kuro-game/interaksi_guru.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-5">
+            <div class="card-body">
+              <br>
+              <h5 class="card-title">Interaksi dengan Guru</h5>
+              <p class="card-text">Leo berinteraksi dengan Guru Les untuk saling sapa dan untuk mendapatkan sebuah clue
+                yang harus dijalankan oleh Leo yang didalamnya terdapat clue pembelajaran Bahasa Inggris dan memecahkan
+                soal layaknya seorang detektif.</p>
+              <br>
+              <p class="card-text"><small class="text-muted">Kuro Game</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-cari" role="tabpanel" aria-labelledby="nav-cari-tab">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-7">
+            <img src="../img/kuro-game/mencari.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-5">
+            <div class="card-body">
+              <br>
+              <h5 class="card-title">Mencari Barang</h5>
+              <p class="card-text">Leo memulai detektifnya untuk mencari barang-barang yang tersembunyi di ruang kelas
+                yang didalamnya terdapat materi dan soal-soal Bahasa Inggris.</p>
+              <br>
+              <p class="card-text"><small class="text-muted">Kuro Game</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-belajar" role="tabpanel" aria-labelledby="nav-belajar-tab">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-7">
+            <img src="../img/kuro-game/belajar.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-5">
+            <div class="card-body">
+              <br>
+              <h5 class="card-title">Belajar Bahasa Inggris</h5>
+              <p class="card-text">Bantu Leo mempelajari materi Bahasa Inggris untuk mempersiapkannya dalam menjawab
+                soal-soal Bahasa Inggris nantinya.</p>
+              <br>
+              <p class="card-text"><small class="text-muted">Kuro Game</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="nav-soal" role="tabpanel" aria-labelledby="nav-soal-tab">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-7">
+            <img src="../img/kuro-game/soal.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-5">
+            <div class="card-body">
+              <br>
+              <h5 class="card-title">Memecahkan Soal</h5>
+              <p class="card-text">Ayo bantu Leo untuk memecahkan soal-soal Bahasa Inggris dengan menjawabnya dengan
+                benar.</p>
+              <br>
+              <p class="card-text"><small class="text-muted">Kuro Game</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end features -->
+
+  <div class="card border-dark mb-3" id="section-kelima">
+    <div class="card-header text-center">
+      <h5>Item</h5>
+    </div>
+  </div>
+
+  <!-- item start -->
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card">
+        <img src="../img/kuro-game/item/Pensil_Warna.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pensil Warna</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../img/kuro-game/item/Tipe_X_-_Depan.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Tipe X</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../img/kuro-game/item/Spidol_Depan.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Spidol</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../img/kuro-game/item/Pensil_Warna_-_Depan.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Box Pensil Warna</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../img/kuro-game/item/Penghapus_Depan.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Penghapus</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../img/kuro-game/item/Penggaris_Depan.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Penggaris</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../img/kuro-game/item/Foto_Pahlawan_Depan.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bingkai Foto</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../img/kuro-game/item/Jam_Dinding_Depan.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Jam Dinding</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../img/kuro-game/item/Buku_Paket_Depan.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Buku</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../img/kuro-game/item/Buku_Catatan_Depan.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Buku Catatan</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../img/kuro-game/item/Pensil.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pensil</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="../img/kuro-game/item/Pulpen_Depan.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ballpoint</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end item -->
+
+  <!-- footer start -->
+  <div class="container" id="section-keempat">
+    <footer class="row row-cols-4 py-4 my-4 border-top">
+      <div class="col">
+        <p class="text-muted">&copy; 2024, Wahyu Aprian</p>
+      </div>
+
+      <div class="col">
+      </div>
+
+      <div class="col">
+        <h5>Contact Me</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a
+              href="https://drive.google.com/file/d/1wS8DjhBxy9l8Nu7HtKCI8z646w6mBO1e/view?usp=drive_link"
+              class="nav-link p-0 text-muted">
+              <img src="../vendor/twbs/bootstrap-icons/icons/postcard.svg" alt="envelope-at" width="32" height="32">
+              Curiculum Vitae</a>
+          </li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <img src="../vendor/twbs/bootstrap-icons/icons/envelope-at.svg" alt="envelope-at" width="32" height="32">
+              wahyuaprian490@gmail.com</a>
+          </li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <img src="../vendor/twbs/bootstrap-icons/icons/instagram.svg" alt="envelope-at" width="32" height="32">
+              @wahyuaprian490</a>
+          </li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+              <img src="../vendor/twbs/bootstrap-icons/icons/threads.svg" alt="envelope-at" width="32" height="32">
+              @wahyuaprian490</a>
+          </li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><img
+                src="../vendor/twbs/bootstrap-icons/icons/twitter-x.svg" alt="envelope-at" width="32" height="32">
+              @wahyuaprian490</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <!-- end footer -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
